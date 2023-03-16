@@ -45,7 +45,7 @@ const filter = evt => {
         if(currentFilter.value != ''){
             filtersObj[currentFilter.id] = currentFilter.value
         }
-        if(currentFilter.id === 'colors' || currentFilter.id === 'types'){
+        if(currentFilter.id === 'colors' || currentFilter.id === 'type'){
             let arr = []
             // console.log(currentFilter)
             let checkboxContainers = currentFilter.children
@@ -57,9 +57,9 @@ const filter = evt => {
                 }
             }
             if(arr.length > 0){
-                if(currentFilter.id === 'colors'){
+                // if(currentFilter.id === 'colors'){
                     arr = arr.join(',')
-                }
+                // }
                 filtersObj[currentFilter.id] = arr
             } else {
                 delete filtersObj[currentFilter.id]

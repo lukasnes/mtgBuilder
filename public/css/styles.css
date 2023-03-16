@@ -141,7 +141,7 @@ header {
     gap: 5px;
     color: var(--black)
 }
-#colors, #types{
+#colors, #type{
     background-color: var(--white);
     border: 1px solid var(--black);
     border-radius: 25px;
